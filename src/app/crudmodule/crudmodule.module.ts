@@ -8,6 +8,11 @@ import { CurdmoduleComponent } from './curdmodule/curdmodule.component';
   declarations: [CurdmoduleComponent],
   imports: [
     CommonModule
+  ],
+  exports:[
+    CurdmoduleComponent
   ]
 })
-export class CrudmoduleModule { }
+export class CrudmoduleModule { 
+  
+}

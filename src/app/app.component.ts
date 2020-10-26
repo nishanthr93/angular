@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { CrudService } from "./services/crud.service";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  constructor( private dataServices:CrudService){
+
+  }
+  increase(){
+    this.dataServices.count++;
+  }
+  decrease(){
+    this.dataServices.count--;
+  }
 }
