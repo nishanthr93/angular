@@ -12,6 +12,7 @@ import { CurdmoduleComponent } from './curdmodule/curdmodule.component';
   exports:[
     CurdmoduleComponent
   ]
+  
 })
 export class CrudmoduleModule { 
   
