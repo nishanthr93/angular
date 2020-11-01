@@ -7,7 +7,7 @@ import { CrudService } from "./services/crud.service";
 })
 export class AppComponent {
   title = 'angular';
-  constructor( private dataServices:CrudService){
+  constructor( public dataServices:CrudService){
 
   }
   increase(){
