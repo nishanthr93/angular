@@ -10,6 +10,7 @@ export class AppComponent {
   constructor( public dataServices:CrudService){
 
   }
+
   increase(){
     this.dataServices.count++;
   }

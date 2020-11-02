@@ -1,2 +1,9 @@
 <p [class]="classname">{{input_name}}</p>
 <input type="text" [(ngModel)]="input_name">
+
+<div *ngIf="colors">
+    colors available
+    <div *ngFor="let clr of colors">
+        {{clr.color}}
+    </div>
+</div>
