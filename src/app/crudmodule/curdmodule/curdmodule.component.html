@@ -1,9 +1,18 @@
 <p [class]="classname">{{input_name}}</p>
 <input type="text" [(ngModel)]="input_name">
 
-<div *ngIf="colors">
+<div *ngIf="colors then colorsFound else noColorsTemp">
+
+</div>
+<ng-template #colorsFound>
     colors available
     <div *ngFor="let clr of colors">
         {{clr.color}}
     </div>
-</div>
+</ng-template>
+
+<ng-template #noColorsTemp>
+    <div>
+        No Colors .
+    </div>
+</ng-template>
